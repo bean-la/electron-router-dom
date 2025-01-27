@@ -31,17 +31,17 @@
     "prepack": "cp ../../README.md ./README.md"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@repo/eslint-config": "link:../eslint-config",
+    "@repo/typescript-config": "link:../typescript-config",
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^14.1.0",
     "@swc/core": "^1.7.10",
     "@types/node": "^18.7.18",
-    "@types/react": "^18.0.20",
+    "@types/react": "^18.3.1",
     "electron": "latest",
     "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
-    "react-router-dom": "^6.22.3",
+    "react-router": "^7.1.3",
     "rollup": "^2.79.1",
     "rollup-plugin-dts": "^4.2.3",
     "rollup-plugin-fast-typescript": "^2.1.1",
@@ -53,7 +53,7 @@
   "peerDependencies": {
     "electron": ">=17.0",
     "react": ">=18.0",
-    "react-router-dom": ">=6.22.3"
+    "react-router": ">=7.1.3"
   },
   "keywords": [
     "electron",
