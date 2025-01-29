@@ -5,7 +5,7 @@ import {
   createHashRouter,
   createRoutesFromChildren,
   type RouterProviderProps,
-} from 'react-router-dom'
+} from 'react-router'
 
 import { toLowerCaseKeys } from 'shared/utils/to-lower-case-keys'
 
@@ -14,8 +14,8 @@ export type RouteDef = Record<string, JSX.Element>
 export type RouterProps<T extends RouteDef> =
   | T
   | {
-      _providerProps: Omit<Partial<RouterProviderProps>, 'router'>
-    }
+    _providerProps: Omit<Partial<RouterProviderProps>, 'router'>
+  }
 
 /**
  * Renders a router component based on the provided routes.
